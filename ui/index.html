@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <link rel="stylesheet" href="file/style/main.css" />
+  <link rel="stylesheet" href="file/style/form.css" />
   <link rel="stylesheet" href="file/style/icon.css" />
   <script src="" type="text/javascript"></script>
   <style>
@@ -33,11 +34,21 @@
     <div class="cover background_color">
       <font class="title">嘿，我喜欢你</font>
       <font class="description">寂寥平静的湖面，忽然泛起一阵涟漪：你可知道，你一住进我的心底~不知什么时候，开始默默地关注一个人，TA的一举一动，一笑一眸，都牵动着我的神经。如果你愿意分享你的经验，传递你的幸福，欢迎贡献新文章。嘿，你知道嘛，我喜欢你</font>
-      <div class="btn center color">投稿</div>
+      <div class="button center color">投稿</div>
+    </div>
+    <!--输入框-->
+    <div class="card" id="composer">
+      <form id="uploader" name="uploader" action="" method="post" enctype="multipart/form-data" onsubmit="return false">
+        <div class="selecter center">选择图片&nbsp;&nbsp;<i class="far fa-images"></i></div>
+        <textarea name="text" class="main_textarea" placeholder="想跟TA说什么？" rows="9" type="text"></textarea>
+        <div class="button center background_color" style="width:63.5%;color:white">上传</div>
+        <div class="button center" style="margin-left:1.5%;width:19%;color:white;background-color:#F7F8F9;color:#999999;font-size:25px;"><i class="fas fa-angle-double-up"></i></div>
+      </form>
     </div>
     <!--卡片-->
     <div class="card">
       <font class="nick">仙女</font>
+      <img src='demo.jpg' class="shadow_1" />
       <font class="content">我对你的喜欢<br>就像多米诺骨牌一样<br>我倒向你，你倒向别人</font>
       <div class="btn">
         <font class="like"><i class="far fa-thumbs-up"></i>&nbsp;20</font>

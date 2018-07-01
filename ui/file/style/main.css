@@ -98,20 +98,6 @@ body {
   line-height: 25px;
 }
 
-.cover .btn {
-  float: left;
-  margin-left: 8%;
-  margin-top: 10.5px;
-  margin-bottom: 15.5px;
-  width: 84%;
-  height: 48px;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 8px;
-  background-color: white;
-  border-color: #8590a6;
-}
-
 /*卡片*/
 
 .card {
@@ -120,6 +106,13 @@ body {
   width: 100%;
   border-bottom: 1px solid #DFE0E3;
   background-color: white;
+}
+
+.card img {
+  float: left;
+  margin-left: 0px;
+  margin-top: 12px;
+  width: 100%;
 }
 
 .card .nick {
