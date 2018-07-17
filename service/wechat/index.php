@@ -44,7 +44,7 @@
       if (is::in('qrscene_', $input->EventKey)) {
           $input->EventKey = str::replace('qrscene_', '', $input->EventKey);
           // 如果是通过有参数二维码订阅
-          require user::dir(-1).'/plug/wechat/subscribe.php';
+          require user::dir().'/service/plug/wechat/scan.php';
       } else {
           // 反之则返回订阅文案
           $wx->return('text', [
@@ -59,7 +59,8 @@
   // 菜单栏点击监听区
 
   $wx->listen('event', 'CLICK', function ($input, $wx) {
-      require user::dir(-1).'/plug/wechat/click.php';
+      require user::dir().'/service/plug/wechat/click.php';
+
   });
 
 
@@ -67,7 +68,7 @@
   // 扫描监听区
 
   $wx->listen('event', 'SCAN', function ($input, $wx) {
-      require user::dir(-1).'/plug/wechat/scan.php';
+      require user::dir().'/service/plug/wechat/scan.php';
   });
 
 
@@ -75,7 +76,7 @@
   // 例外监听区（不满足任何规则的）
 
   $wx->listen('text', 'empty', function ($input, $wx) {
-      require user::dir(-1).'/plug/wechat/empty.php';
+      require user::dir().'/service/plug/wechat/empty.php';
   });
 
 

@@ -13,8 +13,16 @@
 */
 
   switch ($input->EventKey) {
-    case 'event_a':
-      // 样板
+    case 't':
+    $wx->return('news',[
+       'to' => $input->FromUserName,
+       'articles' => [[
+         'title' => '订阅成功！',
+         'description' => 'abc',
+         'picurl' => '',
+         'url' => 'https://baidu.com'
+       ]]
+     ]);
     break;
     case 'event_b':
       // 样板2

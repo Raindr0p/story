@@ -2,7 +2,7 @@
 
   // WeChat Routers: 微信公众号
 
-  build::get('api/wechat/zuggrcampus', function () {
+  build::post('api/wechat/zuggrcampus', function () {
       require user::dir(-1).'/service/wechat/index.php';
   }); // 微信公众号反馈主
 

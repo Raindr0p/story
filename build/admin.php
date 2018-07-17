@@ -10,7 +10,7 @@
       require user::dir(-1).'/service/admin/activate.php';
   }); // 激活故事
 
-  build::get('story/admin/a/invite/[openid]', function ($openid) {
+  build::get('story/admin/a/invite/[tag]', function ($tag) {
       require user::dir(-1).'/service/admin/invite.php';
   }); // 邀请用户
 
